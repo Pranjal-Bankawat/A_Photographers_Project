@@ -34,8 +34,6 @@ let changePageContent = (() => {
         rightArrow: document.querySelector('.right-icon'),
         imageBox: document.querySelectorAll('.image-box'),
         closeBtn: document.querySelector('.close-btn'),
-        animateSalutation: document.querySelector('.salutaion'),
-        animateName: document.querySelector('.name'),
         abountMeSection: document.querySelector('.about-me'),
         abountMeText: 'about-me__text',
         abountMeImage: 'about-me__image',
@@ -52,7 +50,7 @@ let changePageContent = (() => {
         showImage: element => {
             DOMstrings.backdrop.style.display='flex';
             DOMstrings.imageContainer.innerHTML = '';
-            DOMstrings.imageContainer.innerHTML = `<img src="portfolio/image-${element}.PNG">`;
+            DOMstrings.imageContainer.innerHTML = `<img src="../src/portfolio/image-${element}.PNG">`;
             document.getElementById('nav').classList.remove('sticky');
         },
 
@@ -63,12 +61,12 @@ let changePageContent = (() => {
 
         goLeft: nextImageId => {
             DOMstrings.imageContainer.innerHTML = '';
-            DOMstrings.imageContainer.innerHTML = `<img src="portfolio/image-${nextImageId}.PNG">`;
+            DOMstrings.imageContainer.innerHTML = `<img src="../src/portfolio/image-${nextImageId}.PNG">`;
         },
 
         goRight: nextImageId => {
             DOMstrings.imageContainer.innerHTML = '';
-            DOMstrings.imageContainer.innerHTML = `<img src="portfolio/image-${nextImageId}.PNG">`;
+            DOMstrings.imageContainer.innerHTML = `<img src="../src/portfolio/image-${nextImageId}.PNG">`;
         },
 
         getMessage: () => {
@@ -95,7 +93,7 @@ let controller = ( (change,track) => {
         DOM.closeBtn.addEventListener('click',closeImage); 
         DOM.leftArrow.addEventListener('click',navigateLeft);
         DOM.rightArrow.addEventListener('click',navigateRight);
-        document.querySelector('.container').addEventListener('load',loadOnAnimation);
+        window.addEventListener('load',loadAnimation);
         window.addEventListener('scroll',loadOnScroll);
         DOM.submitBtn.addEventListener('click',submitMessage);
         document.querySelector('.hamburger').addEventListener('click',showMobileNav);
@@ -129,9 +127,9 @@ let controller = ( (change,track) => {
         change.goRight(curId.id);
     }
 
-    const loadOnAnimation = () =>{
-        DOM.animateSalutation.classList.add("bounceInLeft");
-        DOM.animateName.classList.add("bounceInRight");
+    const loadAnimation = () =>{
+        document.getElementById("salutation").classList.add("bounceInLeft");
+        document.getElementById("name").classList.add("bounceInRight");
         document.getElementById("nav").classList.add("fadeInDown");
         
         document.querySelector('.bounceInLeft').addEventListener('animationstart',() => {
