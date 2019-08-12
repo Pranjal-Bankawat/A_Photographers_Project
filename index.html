@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+
+<hmtl>
+    <head>
+        <title>Profile</title>
+        <link rel="stylesheet" href="src/style-comp.css">
+        <link rel="stylesheet" href="src/animate_css.css">
+        <link rel="stylesheet" href="src/responsive-comp.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+        <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Barriecito|Lobster|Mountains+of+Christmas:400,700|Ubuntu:300,400,400i&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <div class="flex-container" id="nav">
+                    <div class="logo">
+                        <img class="img-logo" src="src/compressed/logoComp.gif">
+                    </div>
+                    
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="nav-element" href="#about-me">About me</li>
+                            <li class="nav-element">Skill Set</li>
+                            <li class="nav-element">Portfolio</li>
+                            <li class="nav-element">Contact</li>
+                        </ul>
+                    </nav>
+
+                    <div class="hamburger">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                        <div class="line-3"></div>
+                    </div>
+            
+                    <div class="mobile-nav" id="open">
+                        <div class="item mobile-nav__about">About-Me</div>
+                        <div class="item mobile-nav__skill">Skill-Set</div>
+                        <div class="item mobile-nav__portfolio">Portfolio</div>
+                        <div class="item mobile-nav__contact">Contact_Me</div>
+                        <div class="item mobile-nav__close-icon"><ion-icon name="close"></ion-icon></div>
+                    </div>
+                </div>
+                
+                <div class="text">
+                    <div class="salutation" id="salutation">Hey!, I'm</div>
+                    <div class="name" id="name">Anirudh Saxena</div>
+                </div>
+            </div>
+        </header>
+
+        <section class="about-me" id="about-me">
+            <h1>About Me!</h1>
+            <div class="about-me__container">
+                <div class="about-me__text" id="about-me__text">
+                    <p>
+                    There worse by an of miles civil. Manner before lively wholly am mr indeed expect.
+                    Among every merry his yet has her. You mistress get dashwood children off. Met whose marry under the merit.
+                    In it do continual consulted no listening. Devonshire sir sex motionless travelling six themselves.
+                    So colonel as greatly shewing herself observe ashamed. Demands minutes regular ye to detract is.
+                    </p>
+                </div>
+                <div class="about-me__image" id="about-me__image">
+                    <img src="src/compressed/aboutme-imgComp.PNG">
+                </div>
+            </div>
+        </section>
+
+        <section class="skill-set">
+            <h1>Skill set</h1>
+            <h2>I'm really good at:</h2>
+            <div class="skill-set__container">
+                <div class="photography" id="skill-1">
+                    <div class="icon"><ion-icon name="camera"></ion-icon></div>
+                    <div class="photography-text">
+                        Uneasy barton seeing remark happen his has.
+                        Am possible offering at contempt mr distance stronger an.
+                    </div>
+                </div>
+                <div class="editing" id="skill-2">
+                    <div class="icon"><ion-icon name="barcode"></ion-icon></div>
+                    <div class="editing-text">
+                        Uneasy barton seeing remark happen his has.
+                        Am possible offering at contempt mr distance stronger an.
+                    </div>
+                </div>
+                <div class="web-design" id="skill-3">
+                    <div class="icon"><ion-icon name="logo-css3"></ion-icon></div>
+                    <div class="web-design__text">
+                        Uneasy barton seeing remark happen his has.
+                        Am possible offering at contempt mr distance stronger an.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="backdrop">
+                <div class="arrow-left"><ion-icon name="arrow-dropleft-circle" class="left-icon"></ion-icon></div>
+                <div class="big-image"></div>
+                <div class="arrow-right"><ion-icon name="arrow-dropright-circle" class="right-icon"></ion-icon></div>
+                <div class="close-btn"><ion-icon name="close"></ion-icon></div>
+            </div>
+            <div class="big-img"></div>
+            <h1>My Portfolio</h1>
+            <div class="image-container">
+                <div class="portfolio-row">
+                    <div class="image-box img0" id="image-0"><img src="src/compressed-Portfolio/image-0-min.PNG"></div>
+                    <div class="image-box img1" id="image-1"><img src="src/compressed-Portfolio/image-1-min.PNG"></div>
+                    <div class="image-box img2" id="image-2"><img src="src/compressed-Portfolio/image-2-min.PNG"></div>
+                    <div class="image-box img3" id="image-3"><img src="src/compressed-Portfolio/image-3-min.PNG"></div>
+                </div>
+                <div class="portfolio-row">
+                    <div class="image-box img4" id="image-4"><img src="src/compressed-Portfolio/image-4-min.PNG"></div>
+                    <div class="image-box img5" id="image-5"><img src="src/compressed-Portfolio/image-5-min.PNG"></div>
+                    <div class="image-box img6" id="image-6"><img src="src/compressed-Portfolio/image-6-min.PNG"></div>
+                    <div class="image-box img7" id="image-7"><img src="src/compressed-Portfolio/image-7-min.PNG"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h1>Contact Me :)</h1>
+            <div class="contact-form__container">
+                <div class="place-img" id="contact-img">
+                    <img src="src/compressed/contactme-min.PNG">
+                </div>
+                <div class="contact-details" id="contact-details">
+                    <h2 class="address">You can find me at: </h2>
+                    <div class="detail">
+                        <div class="detail-icon"><ion-icon name="pin"></ion-icon></div>
+                        <div class="place-name">Paschim Vihar,Delhi</div>
+                    </div>
+                    <div class="detail">
+                        <div class="detail-icon"><ion-icon name="mail-open"></ion-icon></div>
+                        <div class="place-name">anirudhsaxena9000@gmail.com</div>
+                    </div>
+                    <div class="detail">
+                        <div class="detail-icon"><ion-icon name="call"></ion-icon></div>
+                        <div class="place-name">9582033052</div>
+                    </div>
+                    <h2 class="note">Swing by for a cup of <div class="mug"><ion-icon name="cafe"></ion-icon></div>  or leave me a note!</h2>
+                </div>
+            </div>
+            <div class="message" id="message">
+                <input type="text" id="senderName" placeholder="Name" required>
+                <input type="email" id="senderMail" placeholder="ABC@mail.com" required>
+                <div class="msg"><input type="text" id="senderMessage" placeholder="Message" required></div>
+                <button class="btn">Submit</button>
+            </div>
+        </section>
+
+        <footer>
+            <nav class="footer-nav">
+                <div class="footer-text">Connect with me on:</div>
+                <ul class="social-links">
+                    <li class="social-link" id="insta"><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li class="social-link" id="fb"><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="social-link" id="youtube"><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                </ul>
+                <div class="footer-text">Made by Pranjal Bankawat</div>
+            </nav>
+        </footer>
+        <script src="src/interact-comp.js"></script>
+    </body>
+</hmtl>
