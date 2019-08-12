@@ -95,7 +95,7 @@ let controller = ( (change,track) => {
         DOM.closeBtn.addEventListener('click',closeImage); 
         DOM.leftArrow.addEventListener('click',navigateLeft);
         DOM.rightArrow.addEventListener('click',navigateRight);
-        window.addEventListener('load',loadOnAnimation);
+        document.querySelector('.container').addEventListener('load',loadOnAnimation);
         window.addEventListener('scroll',loadOnScroll);
         DOM.submitBtn.addEventListener('click',submitMessage);
         document.querySelector('.hamburger').addEventListener('click',showMobileNav);
@@ -130,8 +130,8 @@ let controller = ( (change,track) => {
     }
 
     const loadOnAnimation = () =>{
-        document.getElementById("salutation").classList.add("bounceInLeft");
-        document.getElementById("name").classList.add("bounceInRight");
+        DOM.animateSalutation.classList.add("bounceInLeft");
+        DOM.animateName.classList.add("bounceInRight");
         document.getElementById("nav").classList.add("fadeInDown");
         
         document.querySelector('.bounceInLeft').addEventListener('animationstart',() => {
